@@ -9,17 +9,4 @@ pipeline {
                 echo 'code has been cloned'
             }
         }
-        stage("build and test"){
-            steps{
-                sh "docker build -t node-app-test-new ."
-                echo 'code has been build'
-            }
-        }
-        stage("scan image"){
-            steps{
-                echo 'image Scanned'
-            }
-        }
-        
-    }
-}
+		}
